@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- PHẦN 1: Bảng điều khiển (Sidebar/Menu) -->
+    <nav id="sidebar">
+        <h3>Chủ đề</h3>
+        <ul id="topic-list"></ul>
+    </nav>
+
+    <!-- PHẦN 2: Nội dung chính (Flashcard) -->
+    <main id="main-content">
+        <div id="flashcard" onclick="flipCard()">
+            <div id="word-front">Từ vựng sẽ hiển thị ở đây</div>
+            <div id="word-back" style="display:none;">Nghĩa sẽ hiển thị ở đây</div>
+        </div>
+    </main>
+
+    <!-- PHẦN 3: Phần kiểm tra (Quiz) -->
+    <section id="quiz-section">
+        <h3>Kiểm tra nhanh</h3>
+        <div id="question"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
